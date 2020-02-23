@@ -16,3 +16,21 @@
     @content;
   }
 }
+
+.mobile {
+    display: none;
+}
+
+.tablet {
+    display: none;
+}
+
+@media screen and (max-width: #{$medium-breakpoint}) {
+      .mobile {display: block;}
+      .desktop {display: none;}
+}
+
+@media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+      .tablet {display: block;}
+      .desktop {display: none;}
+}

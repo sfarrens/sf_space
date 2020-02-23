@@ -5,15 +5,25 @@ $medium-breakpoint: 42em !default;
 // Headers
 $header-heading-color: #fff !default;
 // $header-bg-color: #159957 !default;
-$header-bg-color: #5EA3C3 !default;
+$header-bg-color: #000000 !default;
 $header-bg-color-secondary: #155799 !default;
-$header-bg-image: url(/assets/images/lego.jpg);
+// $header-bg-image: url(/assets/images/lego.jpg);
 $header-link-color: #FFFFFF !default;
+$header-link-hover-color: #eeafaf !default;
+
+// Navigation
+$nav-bg-color: #000000 !default;
+$nav-link-color: #FFFFFF !default;
+$nav-link-hover-color: #eeafaf !default;
+$nav-border-color: #FFFFFF !default;
+$nav-site-name-color: #f1e1c9 !default;
+
 
 // Text
 $section-headings-color: #db6e6e !default;
 $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
+$body-link-hover-color: #a8bbdd !default;
 $blockquote-text-color: #819198 !default;
 
 // Code
@@ -22,7 +32,7 @@ $code-text-color: #567482 !default;
 $code-text-color: #FF0000 !default;
 
 // Borders
-$border-color: #dce6f0 !default;
+$border-color: #adacac !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 

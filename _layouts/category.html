@@ -2,25 +2,28 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<sub>{{ page.description }}</sub>
+<subtitle>{{ page.description }}</subtitle>
 
 <br>
 <br>
-
 {% assign filtered_posts = site.posts | where: 'category', page.category %}
 {% for post in filtered_posts %}
 <hr>
-<a href="{{ post.url }}" class="post-link">
-<table class="post-table">
-  <tr>
-    <td width="30%">
-      <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
-    </td>
-    <td width="70%">
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.excerpt }}</p>
-    </td>
-  </tr>
-</table>
-</a>
+<div class="desktop">
+  <a href="{{ post.url }}" class="post-link">
+  {%- include pub_desktop.html -%}
+  </a>
+</div>
+
+<div class="tablet">
+  <a href="{{ post.url }}" class="post-link">
+  {%- include pub_desktop.html -%}
+  </a>
+</div>
+
+<div class="mobile">
+  <a href="{{ post.url }}" class="post-link">
+  {%- include pub_mobile.html -%}
+  </a>
+</div>
 {% endfor %}
