@@ -1,6 +1,6 @@
 //Publication post settings
 @mixin pub-font {
-  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-family: $pub-font-family;
 }
 
 .pub-title {

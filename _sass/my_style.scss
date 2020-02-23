@@ -1,28 +1,25 @@
 // Import SCSS variables
 @import "variables";
-@import "rouge-github";
 @import "header";
 @import "footer";
 @import "post";
 @import "pub";
 @import "size";
 @import "navigation";
+@import "code";
 
 //Set basic properties
 html {
-  font-family: 'Roboto', sans-serif;
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
+  font-family: $body-font-family;
+  color: $body-text-color;
   padding: 0;
   margin: 0;
-  // padding-top: 2rem;
-  // font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
 }
 
 a {
@@ -35,55 +32,12 @@ a {
   }
 }
 
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
 .main-content {
-  word-wrap: break-word;
 
-  :first-child {
-    margin-top: 0;
-  }
-
-  @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-
-  @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-    font-size: 1rem;
-  }
+  max-width: 75%;
+  padding: 2rem 6rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
 
   img {
     max-width: 100%;
@@ -110,17 +64,6 @@ th {
     font-size: 1.1rem;
   }
 
-  pre {
-    padding: 0.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    background-color: $code-bg-color;
-    border: solid 1px $border-color;
-    border-radius: 0.3rem;
-    font-size: 1.0rem;
-  }
-
   ul,
   ol {
     margin-top: 0;
@@ -140,41 +83,6 @@ th {
       margin-bottom: 0;
     }
   }
-
-  // table {
-  //   display: block;
-  //   width: 100%;
-  //   overflow: auto;
-  //   word-break: normal;
-  //   word-break: keep-all; // For Firefox to horizontally scroll wider tables.
-  //   -webkit-overflow-scrolling: touch;
-  //
-  //   th {
-  //     font-weight: bold;
-  //   }
-  //
-  //   th,
-  //   td {
-  //     padding: 0.5rem 1rem;
-  //     border: 1px solid $table-border-color;
-  //   }
-  // }
-  //
-  // dl {
-  //   padding: 0;
-  //
-  //   dt {
-  //     padding: 0;
-  //     margin-top: 1rem;
-  //     font-size: 1rem;
-  //     font-weight: bold;
-  //   }
-  //
-  //   dd {
-  //     padding: 0;
-  //     margin-bottom: 1rem;
-  //   }
-  // }
 
   hr {
     height: 2px;

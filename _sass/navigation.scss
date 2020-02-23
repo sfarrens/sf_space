@@ -2,32 +2,44 @@
 
 nav {
   background-color: $nav-bg-color;
-  padding: 1.0rem 1.0rem;
+  padding: 1.0rem 0.0rem;
   overflow: hidden;
   top: 0;
   position: sticky;
+  border-bottom: 1px solid $nav-border-color;
+  box-shadow:0px 1px 1px $nav-border-shadow-color;
+  font-family: $nav-font-family;
+  font-size: $nav-font-size;
+  // max-width: 83%;
+  margin: 0 auto;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: $nav-bg-color;
   overflow: hidden;
-  // padding: 1.0rem 1.0rem;
+  max-width: 75%;
+  // padding-left: 3.5rem;
+  margin: 0 auto;
+  // padding-bottom: 1rem;
+  // border-bottom: 1px solid $nav-border-color;
 
   a {
     float: left;
     display: block;
     color: $nav-link-color;
     text-align: center;
-    padding: 0.0rem 1rem;
     text-decoration: none;
-    font-size: 17px;
+  }
+
+  a:not(:first-child) {
+    padding: 0.0rem 1rem;
   }
 
   a:first-child {
-    color: #f1e1c9;
-    border-right: 1px solid $nav-border-color;
-    padding-left: 1.5rem;
+    font-weight: bold;
+    color: $nav-site-name-color;
+    border-right: 2px solid $nav-line-color;
     padding-right: 1.5rem;
   }
 
@@ -50,7 +62,7 @@ nav {
   .topnav {
 
     a {
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 1rem;
     }
 
     a:first-child {

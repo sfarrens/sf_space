@@ -12,15 +12,26 @@ $header-link-color: #FFFFFF !default;
 $header-link-hover-color: #eeafaf !default;
 
 // Navigation
-$nav-bg-color: #000000 !default;
-$nav-link-color: #FFFFFF !default;
+$nav-font-family: 'Open Sans', sans-serif;
+$nav-font-size: 1.0rem;
+$nav-bg-color: #FFFFFF !default;
+// $nav-bg-color: #f8f8f8 !default;
+// $nav-mobile-bg-color: #f3f6fa !default;
+// $nav-site-name-color: #353535 !default;
+$nav-site-name-color: #353535 !default;
+// $nav-line-color: #353535 !default;
+$nav-line-color: #eff0f1 !default;
+$nav-link-color: #646464 !default;
+// $nav-link-color: #FFFFFF !default;
 $nav-link-hover-color: #eeafaf !default;
-$nav-border-color: #FFFFFF !default;
-$nav-site-name-color: #f1e1c9 !default;
-
+// $nav-border-color: #f0f0f0 !default;
+// $nav-border-shadow-color: #f0f0f0 !default;
+$nav-border-color: #eff0f1 !default;
+$nav-border-shadow-color: #f0f0f0 !default;
 
 // Text
 $section-headings-color: #db6e6e !default;
+$body-font-family: 'Roboto', sans-serif;
 $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
 $body-link-hover-color: #a8bbdd !default;
@@ -38,3 +49,6 @@ $hr-border-color: #eff0f1 !default;
 
 // Posts
 $post-bg-color: #FFFFFF !default;
+
+// Publications
+$pub-font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
