@@ -1,18 +1,30 @@
 // Set sceen size limits
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
+// @mixin large {
+//   @media screen and (min-width: #{$large-breakpoint}) {
+//     @content;
+//   }
+// }
+//
+// @mixin medium {
+//   @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+//     @content;
+//   }
+// }
+//
+// @mixin small {
+//   @media screen and (max-width: #{$medium-breakpoint}) {
+//     @content;
+//   }
+// }
+
+@mixin desktoptab {
+  @media screen and (min-width: #{$mobile-breakpoint}) {
     @content;
   }
 }
 
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-breakpoint}) {
     @content;
   }
 }
@@ -21,16 +33,7 @@
     display: none;
 }
 
-.tablet {
-    display: none;
-}
-
-@media screen and (max-width: #{$medium-breakpoint}) {
+@media screen and (max-width: #{$mobile-breakpoint}) {
       .mobile {display: block;}
-      .desktop {display: none;}
-}
-
-@media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-      .tablet {display: block;}
       .desktop {display: none;}
 }

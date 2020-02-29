@@ -2,9 +2,15 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
+<subtitle>{{ page.description }}</subtitle>
+
+{%- include pub_desktop.html -%}
+
+<!-- <br>
+<br>
 {% assign filtered_posts = site.posts | where: 'category', page.category %}
 {% for post in filtered_posts %}
-<br>
+<hr>
 <div class="desktop">
   <a href="{{ post.url }}" class="post-link">
   {%- include pub_desktop.html -%}
@@ -16,4 +22,4 @@ layout: default
   {%- include pub_mobile.html -%}
   </a>
 </div>
-{% endfor %}
+{% endfor %} -->

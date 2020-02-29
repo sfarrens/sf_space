@@ -6,15 +6,11 @@
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
 
-  @include large {
+  @include desktoptab {
     font-size: 1rem;
   }
 
-  @include medium {
-    font-size: 1rem;
-  }
-
-  @include small {
+  @include mobile {
     font-size: 0.9rem;
   }
 }

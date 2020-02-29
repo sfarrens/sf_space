@@ -1,6 +1,104 @@
 //Post settings
 @import "size";
 
+.post-container {
+  width: 100%;
+  border-radius: 0.3rem;
+  background-color: #f8f8f8;
+  display: inline-block;
+}
+
+.image-frame {
+
+  @include desktoptab {
+    float: right;
+    width: 120px;
+    height: 120px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+  }
+
+  @include mobile {
+    // border: solid 1px $border-color;
+    width: 150px;
+    height: 150px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+}
+
+.post-image {
+
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
+
+  @include desktoptab {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: transform .5s ease;
+    display: block;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  @include mobile {
+
+  }
+
+}
+
+.post-text1 {
+  vertical-align: top;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  max-width: 69%;
+  // border: solid 1px $border-color;
+  // margin-left: 2rem;
+  // overflow: hidden;
+  // overflow-wrap: break-word;
+  // text-overflow: ellipsis;
+  // padding-top: 2rem;
+  display: inline-block;
+}
+
+.post-text2 {
+  // border: solid 1px $border-color;
+  vertical-align: top;
+  text-align: justify;
+  text-justify: inter-word;
+  overflow: hidden;
+  // margin-top: 1rem;
+  margin-right: 214px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+
+// .item {
+//   height: 300px;
+//   // width: 300px;
+//   flex-grow: 1;
+//   flex-basis: 100%;
+//   margin: 10px;
+//
+//   &:not(:empty) {
+//     border: solid 1px $border-color;
+//     border-radius: 0.3rem;
+//   }
+//
+//   &:empty {
+//     height: 0;
+//   }
+// }
+
 .post-title {
   font-size: 1.2rem;
   text-align: center;
@@ -12,82 +110,17 @@
   margin-right: auto;
 }
 
-.image-frame {
-  overflow: hidden;
 
-  @include large {
-    border: solid 1px $border-color;
-    border-radius: 0.3rem;
-    height: 200px;
-    width: 200px;
-  }
 
-  @include medium {
-    border: solid 1px $border-color;
-    border-radius: 0.3rem;
-    height: 200px;
-    width: 200px;
-  }
 
-  @include small {
-    border: solid 1px $border-color;
-    width: 100%;
-    height: 150px;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-}
 
-.post-image {
 
-  @include large {
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: transform .5s ease;
-    display: block;
-    &:hover {
-      transform: scale(1.5);
-    }
-  }
-
-  @include medium {
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: transform .5s ease;
-    display: block;
-    &:hover {
-      transform: scale(1.5);
-    }
-  }
-
-  @include small {
-    width: 50%;
-    display: block;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(2);
-  }
-
-}
 
 .post-table {
   width: 100%;
 
-  @include large {
-    td {
-      text-align: left;
-      height: 150px;
-      padding-right: 2rem;
-      vertical-align: top;
-    }
-  }
-
-  @include medium {
+  @include desktoptab {
     td {
       text-align: left;
       height: 150px;
