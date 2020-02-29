@@ -1,45 +1,66 @@
 //Publication post settings
+@import "size";
+
 @mixin pub-font {
   font-family: $pub-font-family;
-}
-
-.pub-title {
-  @include pub-font
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000000;
-  display: inline-block;
+  font-weight: $pub-font-weight;
 }
 
 .pub-authors {
-  @include pub-font
-  font-size: 1.0rem;
-  color: #9e9e9e;
+  @include pub-font;
+  color: $pub-author-color;
+
+  @include desktoptab {
+    font-size: $pub-author-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-author-font-size-mobile;
+    padding-right: 0.4rem;
+    // border-right: solid 1px $border-color;
+  }
+
+}
+
+.pub-journal {
+  @include pub-font;
+  color: $pub-year-color;
+
+  @include desktoptab {
+    font-size: $pub-year-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-year-font-size-mobile;
+    padding-left: 0.5rem;
+    border-left: solid 1px $border-color;
+  }
+
 }
 
 .pub-year {
-  @include pub-font
-  font-size: 1.0rem;
-  color: #9e9e9e;
+  @include pub-font;
+  color: $pub-year-color;
+
+  @include desktoptab {
+    font-size: $pub-year-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-year-font-size-mobile;
+  }
 }
 
 .pub-excerpt {
-  @include pub-font
-  font-size: 1.0rem;
-}
+  @include pub-font;
+  color: $body-text-color;
 
-
-.pdf-icon {
-  height: 25px;
-  width: 25px;
-  padding-top: 10px;
-
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  -ms-transition: all 2s ease;
-  transition: transform .5s ease;
-
-  &:hover {
-    transform: scale(1.5);
+  @include desktoptab {
+    font-size: $pub-excerpt-font-size;
   }
+
+  @include mobile {
+    font-size: $pub-excerpt-font-size-mobile;
+  }
+
 }

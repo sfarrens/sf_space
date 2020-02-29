@@ -1,3 +1,5 @@
 ---
-layout: default
+title: Tutorials
+layout: category
+category: tutor
 ---

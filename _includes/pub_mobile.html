@@ -1,14 +1,15 @@
-<div class="post-frame">
-  <hr>
-  <br>
-  <div class="image-frame">
+<div class="post-container" onclick="location.href='{{ post.url }}';">
+  <div class="post-image-container">
     <img src="{{ site.image_path }}/{{ post.image }}" class="post-image">
   </div>
   <br>
-  <span class="pub-title">{{ post.title }}</span>
-  <br>
-  <span class="pub-authors">{{ post.authors }}</span>
-  <br>
-  <span class="pub-year">{{ post.journal }}</span>
-  <span class="pub-year">{{ post.year }}</span>
+  <div class="post-title-container">
+    <span class="post-title">{{ post.title }}</span>
+    <br>
+    <span class="pub-authors">{{ post.authors }}</span>
+    <span class="pub-journal">{{ post.journal }}</span>
+    <span class="pub-year">{{ post.year }}</span>
+    <br>
+    <span class="pub-excerpt">{{ post.excerpt | truncate: 150 }}</span>
+  </div>
 </div>

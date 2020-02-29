@@ -1,3 +1,5 @@
 ---
-layout: default
+title: Software
+layout: category
+category: soft
 ---
