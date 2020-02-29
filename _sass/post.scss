@@ -104,8 +104,19 @@
   margin-left: 2rem;
 }
 
+.post-icon {
+  height: 30px;
+  padding-top: 10px;
+}
+
+.post-badge-container {
+  margin-top: 1.0rem;
+  display: block;
+  margin-left: 2rem;
+}
+
 .post-excerpt-container {
-  max-width: 69%;
+  max-width: 70%;
   vertical-align: top;
   text-align: justify;
   text-justify: inter-word;
@@ -149,9 +160,4 @@
   color: $post-title-color;
   display: inline-block;
 
-}
-
-.post-icon {
-  height: 30px;
-  padding-top: 10px;
 }
