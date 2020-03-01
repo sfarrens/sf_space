@@ -1,0 +1,33 @@
+@import "size";
+
+#markdown-toc {
+
+  list-style: none;
+  display: inline-block;
+
+  a {
+    color: $nav-link-color;
+    font-weight: $nav-font-weight;
+  }
+
+  li {
+    @include desktoptab {
+      display:inline-block;
+      padding-right: 0.7rem;
+
+      &:not(:first-child) {
+        padding-left: 0.4rem;
+      }
+
+      &:not(:last-child) {
+        border-right: solid 1px $border-color;
+      }
+    }
+   @include mobile {
+     &:not(:last-child) {
+       margin-bottom: 0.6rem;
+     }
+   }
+  }
+
+}

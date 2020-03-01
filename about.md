@@ -1,13 +1,20 @@
 ---
 title: About Me
-layout: about_lay
+image: me.jpg
 myname: Samuel Farrens
 tagline: Cosmologist and Python enthusiast
+layout: default
 ---
 
-[Research Interests](#research) [Contact Information](#contact)
+* Table of Contents
+{:toc}
 
-<a name="research"></a>
+<div class="about-image-container">
+  <img src="{{ site.image_path }}/{{ page.image }}" class="about-image">
+  <span class="about-name">{{ page.myname }}</span><br>
+  <span class="about-tag">{{ page.tagline }}</span><br>
+</div>
+
 ## Research Interests
 
 Prior to joining the CosmoStat team my work was primarily focused on the optical detection and analysis of clusters of galaxies using photometric redshifts. During my PhD I developed a prototype friends-of-friends optical cluster detection algorithm that was further developed and optimised during postdoc positions in Barcelona and Trieste. I also developed serval metrics and analysis codes designed to compare the relative performance of various different cluster detection codes on Euclid mock galaxy simulations.
@@ -15,7 +22,6 @@ Prior to joining the CosmoStat team my work was primarily focused on the optical
 I am currently working on galaxy image deconvolution using regularisation techniques such as sparsity and low-rank approximation.
 The idea being to remove the effects of a point spread function (PSF) that varies as function of position on the sky. This is beneficial for projects like Euclid that aim to measure galaxy shapes to good accuracy.
 
-<a name="contact"></a>
 ## Contact Information
 
 * Email: [samuel [*dot*] farrens [*at*] cea [*dot*] fr](mailto:samuel.farrens@cea.fr)

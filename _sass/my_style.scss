@@ -1,13 +1,16 @@
 // Import SCSS variables
 @import "variables";
-@import "header";
+@import "shared";
+// Import SCSS files
+@import "about";
+@import "code";
 @import "footer";
+@import "header";
+@import "navigation";
 @import "post";
 @import "pub";
 @import "size";
-@import "navigation";
-@import "code";
-@import "about";
+@import "toc";
 
 //Set basic properties
 html {
@@ -21,6 +24,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.5;
+
 }
 
 a {
@@ -31,24 +35,51 @@ a {
     color: $body-link-hover-color;
     text-decoration: none;
   }
+
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  -webkit-overflow-scrolling: touch;
+
+  th {
+    font-weight: bold;
+  }
+
+  td,
+  th {
+    padding: 0.5rem 1rem;
+    border: 1px solid $table-border-color;
+  }
 }
 
 .main-content {
 
+  margin: 0 auto;
+
   @include desktoptab {
     max-width: 75%;
     padding: 2rem 6rem;
+    font-size: 1.1rem;
   }
   @include mobile {
     max-width: 100%;
     padding: 2rem 3rem;
+    font-size: 0.9rem;
   }
 
-  margin: 0 auto;
-  font-size: 1.1rem;
 
-  img {
-    max-width: 100%;
+  .icon {
+    height: 60px;
+    margin-right: 60px;
   }
 
   h2,
@@ -88,14 +119,29 @@ a {
     margin-bottom: 1em;
   }
 
-  .subtitle {
-    color: $blockquote-text-color;
-    font-size: 1.1rem;
+
+  ul.special {
+    list-style-type: circle;
   }
 
-  ul,
   ol {
     margin-top: 0;
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
   }
 
   blockquote {

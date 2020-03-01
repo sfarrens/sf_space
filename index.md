@@ -2,6 +2,11 @@
 layout: default
 ---
 
+![alt txt]({{ site.image_path }}/github.png){:.icon}
+![alt txt]({{ site.image_path }}/github.png){:.icon}
+![alt txt]({{ site.image_path }}/github.png){:.icon}
+![alt txt]({{ site.image_path }}/github.png){:.icon}
+
 Welcome to my website!
 
 [this is a lin](tosometing)

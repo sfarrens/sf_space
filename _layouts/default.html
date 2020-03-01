@@ -9,9 +9,14 @@
     {% include navigation.html %}
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
 
-    {%- include footer.html -%}
+      {% if page.title != nil %}
+      <h1>{{ page.title }}</h1>
+      {% endif %}
+
+      {% include anchor_headings.html html=content %}
+
+      {%- include footer.html -%}
 
     </main>
 

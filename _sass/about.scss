@@ -1,9 +1,12 @@
 
 
 .about-image-container {
-  max-width: 27%;
+  height: 25rem;
+  width: 20rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   overflow: hidden;
   border-radius: 0.3rem;
   @include shadow;
@@ -11,10 +14,16 @@
 
 .about-image {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
+  object-position: 0 -65px;
   display: block;
   margin-bottom: 1rem;
+}
+
+.about-name {
+  margin: 1rem;
+  font-weight: 600;
 }
 
 .about-tag {

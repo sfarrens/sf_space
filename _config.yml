@@ -5,6 +5,10 @@ google_analytics:
 theme: jekyll-theme-cayman
 image_path: /assets/images
 
+plugins:
+  - jekyll-latex
+  - jekyll-target-blank
+
 defaults:
   -
     scope:

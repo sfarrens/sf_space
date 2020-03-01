@@ -3,18 +3,14 @@ $large-breakpoint: 64em !default;
 $medium-breakpoint: 42em !default;
 $mobile-breakpoint: 50em !default;
 
-
 // Headers
 $header-heading-color: #fff !default;
-// $header-bg-color: #159957 !default;
 $header-bg-color: #000000 !default;
 $header-bg-color-secondary: #155799 !default;
-// $header-bg-image: url(/assets/images/lego.jpg);
 $header-link-color: #FFFFFF !default;
 $header-link-hover-color: #eeafaf !default;
 
 // Navigation
-// $nav-font-family: 'Open Sans', sans-serif;
 $nav-font-family: Gill Sans, sans-serif;
 $nav-font-size: 1.1rem;
 $nav-font-weight: 300;
@@ -27,6 +23,9 @@ $nav-link-hover-color: #eeafaf !default;
 $nav-border-color: #dddddd !default;
 $nav-border-shadow-color: #f0f0f0 !default;
 
+// TOC
+$toc-font-size-mobile: 0.9rem;
+
 // Text
 $h1-color: #000000 !default;
 $h1-font-size-mobile: 1.5rem;
@@ -36,7 +35,7 @@ $heading-color: #646464 !default;
 $heading-font-weight: 300;
 $heading-underline-color: #db6e6e !default;
 
-// $body-font-family: 'Roboto', sans-serif;
+// Body
 $body-font-family: Gill Sans, sans-serif;
 $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
@@ -54,7 +53,6 @@ $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 
 // Posts
-// $post-font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 $post-font-family: Gill Sans, sans-serif;
 $post-title-font-weight: 600;
 $post-title-color: #000000;
@@ -67,9 +65,7 @@ $in-post-title-font-weight: 300;
 $in-post-title-color: #000000;
 $in-post-title-font-size: 2rem;
 
-
 // Publications
-// $pub-font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 $pub-font-family: Gill Sans, sans-serif;
 $pub-font-weight: 300;
 $pub-author-color: #9e9e9e;
