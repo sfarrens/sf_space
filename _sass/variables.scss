@@ -1,6 +1,4 @@
 // Breakpoints
-$large-breakpoint: 64em !default;
-$medium-breakpoint: 42em !default;
 $mobile-breakpoint: 50em !default;
 
 // Headers
@@ -22,6 +20,10 @@ $nav-link-color: #646464 !default;
 $nav-link-hover-color: #eeafaf !default;
 $nav-border-color: #dddddd !default;
 $nav-border-shadow-color: #f0f0f0 !default;
+
+// Topic
+$topic-font-size: 1.5rem;
+$topic-font-weight: 300;
 
 // TOC
 $toc-font-size-mobile: 0.9rem;

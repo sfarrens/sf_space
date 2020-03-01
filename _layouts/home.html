@@ -7,38 +7,21 @@ layout: default
     <img src="{{ site.image_path }}/sea.jpg" class="home-image">
   </div>
   <div class="icon-container">
-
-    {% if page.cosmostat != nil %}
+    {% for item in site.data.icons %}
     <div>
-      <a href="{{ page.cosmostat }}" target="_blank">
-        <img src="{{ site.image_path }}/cosmostat.png" class="home-icon-pad">
+      <a href="{{ item.link }}" target="_blank">
+        <img src="{{ site.image_path }}/{{ item.image }}" class="home-icon-pad">
       </a>
     </div>
-    {% endif %}
-
-    {% if page.github != nil %}
-    <div>
-      <a href="{{ page.github }}" target="_blank">
-        <img src="{{ site.image_path }}/github.png" class="home-icon-pad">
-      </a>
-    </div>
-    {% endif %}
-
-    {% if page.github != nil %}
-    <div>
-      <a href="{{ page.twitter }}" target="_blank">
-        <img src="{{ site.image_path }}/twitter.png" class="home-icon-pad">
-      </a>
-    </div>
-    {% endif %}
-
-    {% if page.github != nil %}
-    <div>
-      <a href="{{ page.linkedin }}" target="_blank">
-        <img src="{{ site.image_path }}/linkedin.png" class="home-icon">
-      </a>
-    </div>
-    {% endif %}
-
+    {% endfor %}
   </div>
+</div>
+
+<div class="topic-container">
+  {% for item in site.data.topics %}
+    <div class="topic" onclick="location.href='{{ item.link }}';">
+      <img src="{{ site.image_path }}/{{ item.image }}" class="topic-image">
+      <span class="topic-title">{{ item.name }}</span>
+    </div>
+  {% endfor %}
 </div>

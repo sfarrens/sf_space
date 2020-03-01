@@ -4,6 +4,7 @@
 .post-container {
 
   @include shadow;
+  border-radius: 0.3rem;
 
   @include desktoptab {
     border-radius: 0.3rem;
@@ -12,6 +13,8 @@
 
   @include mobile {
     width: 100%;
+    overflow: hidden;
+    display: inline-block;
     cursor: pointer;
   }
 
@@ -55,6 +58,7 @@
 
   @include mobile {
     object-fit: cover;
+    display: block;
   }
 
 }
