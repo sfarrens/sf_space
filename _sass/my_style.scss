@@ -6,6 +6,7 @@
 @import "code";
 @import "footer";
 @import "header";
+@import "home";
 @import "navigation";
 @import "post";
 @import "pub";
@@ -74,12 +75,6 @@ table {
     max-width: 100%;
     padding: 2rem 3rem;
     font-size: 0.9rem;
-  }
-
-
-  .icon {
-    height: 60px;
-    margin-right: 60px;
   }
 
   h2,

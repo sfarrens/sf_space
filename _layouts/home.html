@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="home-container">
+  <div class="home-image-container">
+    <img src="{{ site.image_path }}/sea.jpg" class="home-image">
+  </div>
+  <div class="icon-container">
+
+    {% if page.cosmostat != nil %}
+    <div>
+      <a href="{{ page.cosmostat }}" target="_blank">
+        <img src="{{ site.image_path }}/cosmostat.png" class="home-icon-pad">
+      </a>
+    </div>
+    {% endif %}
+
+    {% if page.github != nil %}
+    <div>
+      <a href="{{ page.github }}" target="_blank">
+        <img src="{{ site.image_path }}/github.png" class="home-icon-pad">
+      </a>
+    </div>
+    {% endif %}
+
+    {% if page.github != nil %}
+    <div>
+      <a href="{{ page.twitter }}" target="_blank">
+        <img src="{{ site.image_path }}/twitter.png" class="home-icon-pad">
+      </a>
+    </div>
+    {% endif %}
+
+    {% if page.github != nil %}
+    <div>
+      <a href="{{ page.linkedin }}" target="_blank">
+        <img src="{{ site.image_path }}/linkedin.png" class="home-icon">
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
