@@ -8,6 +8,11 @@
   a {
     color: $nav-link-color;
     font-weight: $nav-font-weight;
+
+    &:hover {
+      color: $nav-link-hover-color;
+      text-decoration: none;
+    }
   }
 
   li {

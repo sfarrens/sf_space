@@ -1,5 +1,6 @@
 - name: SF Space
   link: /index.html
+  image: mythosaur.jpg
 - name: About
   link: /about.html
 - name: CV
