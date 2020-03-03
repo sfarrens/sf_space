@@ -16,3 +16,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+kramdown:
+   toc_levels: 1..2

@@ -8,6 +8,7 @@ authors: Euclid Collaboration; R. Adam, M. Vannier, ..., S. Farrens, et al.
 ads: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/abstract
 arxiv: https://arxiv.org/abs/1906.04707
 pdf: https://www.aanda.org/articles/aa/pdf/2019/07/aa35088-19.pdf
+bibtex: https://ui.adsabs.harvard.edu/abs/2019A%26A...627A..23E/exportcitation
 layout: post-pub
 ---
 
