@@ -35,3 +35,20 @@
 .about-cs-logo {
   max-width: 60%;
 }
+
+.about-iframe-container {
+  position: relative;
+  padding-top: 56.25%;
+  z-index: 0;
+  border: 1px solid $border-color;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.about-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

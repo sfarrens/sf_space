@@ -20,7 +20,9 @@
 
 .icon-container {
   height: 125px;
-  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 
@@ -51,21 +53,15 @@
   }
 }
 
-.icon-container:after {
-  content: '';
-  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  display: inline-block;
-}
-
 .topic-container {
-  margin-bottom: 2rem;
-  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
 
   @include desktoptab {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   @include mobile {
@@ -78,11 +74,12 @@
   text-align: center;
   height: 250px;
   border-radius: 0.3rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   display: inline-block;
+  cursor: pointer;
 
   @include desktoptab {
     width: 250px;
@@ -104,10 +101,4 @@
   font-size: $topic-font-size;
   font-weight: $topic-font-weight;
   margin: 1rem;
-}
-
-.topic-container:after {
-  content: '';
-  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
-  display: inline-block;
 }

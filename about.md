@@ -43,7 +43,10 @@ I co-leading, in collaboration with the team at NeuroSpin, the development of a 
 
 > What to know more? Check out this video from a keynote I gave at [EuroScipy](https://www.euroscipy.org/) in 2019.
 
-<iframe width="80%" height="500" src="https://www.youtube.com/embed/AktERyTXww0"></iframe>
+<div class="about-iframe-container">
+  <iframe src="https://www.youtube.com/embed/AktERyTXww0" frameborder="0" allowfullscreen
+    class="about-iframe"></iframe>
+</div>
 
 ### Machine Learning
 
