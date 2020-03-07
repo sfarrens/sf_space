@@ -1,3 +1,5 @@
 ---
-layout: default
+title: Blog
+layout: category
+category: blog
 ---

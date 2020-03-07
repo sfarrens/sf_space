@@ -1,13 +1,6 @@
 // Breakpoints
 $mobile-breakpoint: 50em !default;
 
-// Headers
-$header-heading-color: #fff !default;
-$header-bg-color: #000000 !default;
-$header-bg-color-secondary: #155799 !default;
-$header-link-color: #FFFFFF !default;
-$header-link-hover-color: #eeafaf !default;
-
 // Navigation
 $nav-font-family: Gill Sans, sans-serif;
 $nav-font-size: 1.1rem;
@@ -19,14 +12,10 @@ $nav-line-color: #dddddd !default;
 $nav-link-color: #646464 !default;
 $nav-link-hover-color: #eeafaf !default;
 $nav-border-color: #dddddd !default;
-$nav-border-shadow-color: #f0f0f0 !default;
 
 // Topic
 $topic-font-size: 1.5rem;
 $topic-font-weight: 300;
-
-// TOC
-$toc-font-size-mobile: 0.9rem;
 
 // Text
 $h1-color: #000000 !default;
@@ -43,6 +32,12 @@ $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
 $body-link-hover-color: #eeafaf !default;
 $blockquote-text-color: #819198 !default;
+
+// Footer
+$footer-text-color: #a2a2a2 !default;
+$footer-bg-color: #353535 !default;
+$footer-font-size: 0.9rem;
+$footer-font-weight: 300;
 
 // Code
 $code-bg-color: #f3f6fa !default;
@@ -62,10 +57,10 @@ $post-title-font-size: 1.3rem;
 $post-title-font-size-mobile: 1.1rem;
 $post-font-size: 1rem;
 $post-font-size-mobile: 0.7rem;
-$post-bg-color: #FFFFFF !default;
-$in-post-title-font-weight: 300;
-$in-post-title-color: #000000;
-$in-post-title-font-size: 2rem;
+$post-tag-color: #FFFFFF;
+$post-tag-font-size: 0.8rem;
+$post-tag-font-weight: 300;
+$post-tag-bg-color: #646464 !default;
 
 // Publications
 $pub-font-family: Gill Sans, sans-serif;

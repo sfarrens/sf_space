@@ -1,8 +1,10 @@
 // Import SCSS variables
 @import "variables";
 @import "shared";
+@import "size";
 // Import SCSS files
 @import "about";
+@import "blog";
 @import "code";
 @import "cv";
 @import "footer";
@@ -11,7 +13,6 @@
 @import "navigation";
 @import "post";
 @import "pub";
-@import "size";
 @import "toc";
 
 //Set basic properties

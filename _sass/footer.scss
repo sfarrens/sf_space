@@ -1,25 +1,11 @@
 @import "size";
 
-//Set footer properties
 .site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
-
-  @include desktoptab {
-    font-size: 1rem;
-  }
-
-  @include mobile {
-    font-size: 0.9rem;
-  }
-}
-
-.site-footer-owner {
-  display: block;
-  font-weight: bold;
-}
-
-.site-footer-credits {
-  color: $blockquote-text-color;
+  padding-top: 0.2rem;
+  padding-bottom: 1.6rem;
+  padding-left: 1rem;
+  color: $footer-text-color;
+  background-color: $footer-bg-color;
+  font-size: $footer-font-size;
+  font-weight: $footer-font-weight;
 }

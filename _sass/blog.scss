@@ -1,0 +1,30 @@
+@import "post";
+
+.blog-container {
+  @include post-box-container(left);
+}
+
+.blog {
+  @include post-box(435px, 312px, none);
+  position: relative;
+}
+
+.blog-image {
+  @include post-box-image(250px);
+}
+
+.blog-text-container {
+  margin-left: 1rem;
+}
+
+.blog-tag {
+  color: $post-tag-color;
+  font-size: $post-tag-font-size;
+  font-weight: $post-tag-font-weight;
+  opacity: 1;
+  position: absolute;
+  top: 5%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: $post-tag-bg-color;
+}
