@@ -68,6 +68,7 @@ table {
 
   margin: 0 auto;
   overflow: auto;
+  font-weight: 400;
 
   @include desktoptab {
     max-width: 75%;

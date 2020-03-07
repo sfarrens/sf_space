@@ -1,4 +1,5 @@
 @import "post";
+@import "pub";
 
 .blog-container {
   @include post-box-container(left);
@@ -15,6 +16,23 @@
 
 .blog-text-container {
   margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  max-height: 145px;
+  overflow: hidden;
+}
+
+.blog-excerpt {
+  @include pub-font;
+  color: $body-text-color;
+
+  @include desktoptab {
+    font-size: $pub-excerpt-font-size;
+  }
+
+  @include mobile {
+    font-size: $pub-excerpt-font-size-mobile;
+  }
 }
 
 .blog-tag {
