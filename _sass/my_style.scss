@@ -68,7 +68,7 @@ table {
 
   margin: 0 auto;
   overflow: auto;
-  font-weight: 400;
+  font-weight: $body-font-weight;
 
   @include desktoptab {
     max-width: 75%;
@@ -116,6 +116,10 @@ table {
   h6 {
     color: $heading-color;
     font-weight: $heading-font-weight;
+  }
+
+  strong {
+    font-weight: $strong-font-weight;
   }
 
   p {

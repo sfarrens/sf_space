@@ -28,9 +28,11 @@ $heading-underline-color: #db6e6e !default;
 
 // Body
 $body-font-family: Gill Sans, sans-serif;
+$body-font-weight: 300;
 $body-text-color: #606c71 !default;
 $body-link-color: #7394ce !default;
 $body-link-hover-color: #eeafaf !default;
+$strong-font-weight: 500;
 $blockquote-text-color: #819198 !default;
 
 // Footer
@@ -51,7 +53,7 @@ $hr-border-color: #eff0f1 !default;
 
 // Posts
 $post-font-family: Gill Sans, sans-serif;
-$post-title-font-weight: 600;
+$post-title-font-weight: 500;
 $post-title-color: #000000;
 $post-title-font-size: 1.3rem;
 $post-title-font-size-mobile: 1.1rem;
@@ -61,6 +63,7 @@ $post-tag-color: #FFFFFF;
 $post-tag-font-size: 0.8rem;
 $post-tag-font-weight: 300;
 $post-tag-bg-color: #646464 !default;
+$in-post-info-font-weight: 600;
 
 // Publications
 $pub-font-family: Gill Sans, sans-serif;
